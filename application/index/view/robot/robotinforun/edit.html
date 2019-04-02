@@ -1,0 +1,94 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Robot_sn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-robot_sn" data-rule="required" class="form-control" name="row[robot_sn]" type="text" value="{$row.robot_sn}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Dumpenergy')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-dumpenergy" data-rule="required" class="form-control" step="0.01" name="row[dumpenergy]" type="number" value="{$row.dumpenergy}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Temp')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-temp" data-rule="required" class="form-control" step="0.01" name="row[temp]" type="number" value="{$row.temp}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Alarm_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-alarm_type" data-rule="required" class="form-control" name="row[alarm_type]" type="text" value="{$row.alarm_type}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Alarm_content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-alarm_content" data-rule="required" class="form-control" name="row[alarm_content]" type="text" value="{$row.alarm_content}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Work_distance')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-work_distance" data-rule="required" class="form-control" step="0.001" name="row[work_distance]" type="number" value="{$row.work_distance}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Total_distance')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-total_distance" data-rule="required" class="form-control" step="0.001" name="row[total_distance]" type="number" value="{$row.total_distance}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Velocity')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-velocity" data-rule="required" class="form-control" step="0.001" name="row[velocity]" type="number" value="{$row.velocity}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Azimuthangle')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-azimuthangle" data-rule="required" class="form-control" step="0.001" name="row[azimuthangle]" type="number" value="{$row.azimuthangle}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Elevation')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-elevation" data-rule="required" class="form-control" step="0.001" name="row[elevation]" type="number" value="{$row.elevation}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Latitude')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-latitude" data-rule="required" class="form-control" name="row[latitude]" type="text" value="{$row.latitude}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Longitude')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-longitude" data-rule="required" class="form-control" name="row[longitude]" type="text" value="{$row.longitude}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Duration')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-duration" data-rule="required" class="form-control" name="row[duration]" type="number" value="{$row.duration}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Currenttime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-currenttime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[currenttime]" type="text" value="{$row.currenttime|datetime}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
